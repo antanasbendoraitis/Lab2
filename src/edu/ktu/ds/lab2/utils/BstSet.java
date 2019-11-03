@@ -400,25 +400,6 @@ public class BstSet<E extends Comparable<E>> implements SortedSet<E>, Cloneable 
         }
         return el;
     }
-    
-   /* private void findNode(E element, BstNode<E> node, BstNode<E> backNode)
-    {
-         // System.out.println(node.element + "sgfa");
-        //int tmp = c.compare(element, node.element);
-        if ( c.compare(element, node.element) == 1) {
-            System.out.println("Sg");
-            //System.out.println(node.element + "sgfa");
-            backNode = node.right;
-              System.out.println(backNode.element + "sgfa");
-        }
-        
-         if (node.right != null) {
-                    findNode(element, node.right, backNode);
-        }
-        if (node.left != null) {
-                    findNode(element, node.left, backNode);
-        }
-    }*/
     /**
      * 
      * @param el   - Aibės elementas.
@@ -752,12 +733,6 @@ public class BstSet<E extends Comparable<E>> implements SortedSet<E>, Cloneable 
         @Override //-------------------------------------------------------------------------Iteracinis šalinimo metodas------------||
         public void remove() {
             remov = 1; //nukreipiamas vidinių elementų šalinimas
-           /* if (size2 == 1) {
-               // n.element = null;
-               System.out.println(n.element.toString() + "------");
-                removeRecursive(n.element, root);
-               // next();
-            }*/
             if (size2 == size) { //šalinamas paskutinis elementas
                 removeRecursive(n.element, root);  
             }
