@@ -529,7 +529,6 @@ public class BstSet<E extends Comparable<E>> implements SortedSet<E>, Cloneable 
         int max = 0;
         List<Integer> d = new ArrayList<Integer>();
         recHeight(root, d, 1);
-        System.out.print("--------------------");
         for (Integer heights : d) {
             System.out.print(heights + " ");
             if (heights > max) {
